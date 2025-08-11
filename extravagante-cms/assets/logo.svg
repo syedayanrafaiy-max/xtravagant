@@ -1,0 +1,10 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+  <style>
+    .w{font-family: 'Playfair Display', serif; font-size:64px; fill:#0b2a3b; font-weight:700; letter-spacing:6px;}
+    .a{font-family: 'Playfair Display', serif; font-size:28px; fill:#0b2a3b;}
+  </style>
+  <text x="30" y="110" class="w">EXTRAVAGANT</text>
+  <text x="560" y="110" class="w">È</text>
+  <text x="595" y="76" class="a">,</text>
+</svg>
