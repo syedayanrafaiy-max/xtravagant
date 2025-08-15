@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - EXTRAVAGANTÈ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="cart.html">Your Cart</a>
+    <a href="about.html">About</a>
+</nav>
+
+<main class="checkout-page">
+    <h1>Checkout</h1>
+    <p>We currently only ship within Karachi.</p>
+    <form name="checkout" method="POST" data-netlify="true">
+        <label>Full Name:</label>
+        <input type="text" name="name" required>
+
+        <label>Phone Number:</label>
+        <input type="tel" name="phone" required>
+
+        <label>Address:</label>
+        <textarea name="address" required></textarea>
+
+        <label>Country:</label>
+        <input type="text" name="country" value="Pakistan" readonly>
+
+        <label>City:</label>
+        <input type="text" name="city" value="Karachi" readonly>
+
+        <label>Payment Method:</label>
+        <input type="text" value="Cash on Delivery" readonly>
+
+        <button type="submit">Place Order</button>
+    </form>
+</main>
+
+<footer>
+    <p>© 2025 EXTRAVAGANTÈ</p>
+</footer>
+</body>
+</html>
