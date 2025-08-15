@@ -23,27 +23,38 @@
 
 <div class="main-content">
     <h1>Checkout</h1>
-    <p>We currently only ship within Karachi (Shipping: 150 PKR)</p>
-    <form name="checkout" method="POST" data-netlify="true">
-        <label>Full Name:</label>
+    <form name="checkout" method="POST" data-netlify="true" action="thank-you.html">
+        <label>Full Name</label>
         <input type="text" name="name" required>
-        <label>Phone Number:</label>
-        <input type="tel" name="phone" required>
-        <label>Address:</label>
-        <textarea name="address" required></textarea>
-        <input type="hidden" name="country" value="Pakistan">
-        <input type="hidden" name="city" value="Karachi">
-        <input type="hidden" name="payment" value="Cash on Delivery">
-        <button type="submit">Place Order</button>
-        <form name="checkout" method="POST" data-netlify="true" action="thank-you.html">
-</form>
 
+        <label>Phone Number</label>
+        <input type="tel" name="phone" required>
+
+        <label>Address</label>
+        <textarea name="address" required></textarea>
+
+        <label>Country</label>
+        <input type="text" name="country" value="Pakistan" readonly>
+
+        <label>City</label>
+        <input type="text" name="city" value="Karachi" readonly>
+
+        <input type="hidden" name="orderDetails" id="orderDetails">
+
+        <button type="submit">Place Order</button>
     </form>
 </div>
 
 <footer>
     <p>© 2025 EXTRAVAGANTÈ</p>
 </footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    document.getElementById("orderDetails").value = JSON.stringify(cart);
+});
+</script>
 
 </body>
 </html>
