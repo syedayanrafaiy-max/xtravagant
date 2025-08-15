@@ -1,46 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EXTRAVAGANTÈ</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EXTRAVAGANTÈ</title>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
 </head>
 <body>
-<header class="hero">
-    <h1 class="brand-title">EXTRAVAGANTÈ</h1>
-    <img src="https://i.ibb.co/93vfCp2z" alt="Hero Image" class="hero-image">
-</header>
 
-<nav class="navbar">
+<div class="sidebar">
+    <h2>Menu</h2>
     <a href="index.html">Home</a>
     <div class="dropdown">
         <button class="dropbtn">Products</button>
         <div class="dropdown-content">
-            <a href="products.html">Men's Polos</a>
+            <a href="mens-polos.html">Men's Polos</a>
         </div>
     </div>
     <a href="cart.html">Your Cart</a>
     <a href="about.html">About</a>
-</nav>
+</div>
 
-<main>
-    <section class="products-preview">
-        <h2>Featured Product</h2>
-        <div class="product-card">
-            <img src="467E7C28-0D7A-4001-AC74-F6C6C4445F8D.jpeg" alt="Classical Collared Polo">
-            <h3>Classical Collared Polo</h3>
-            <p>Premium quality, budget-friendly price</p>
-            <p class="price">2750 PKR</p>
-            <button onclick="addToCart('Classical Collared Polo', 2750)">Add to Cart</button>
-        </div>
+<div class="main-content">
+    <header class="hero">
+        <h1 class="brand-title">EXTRAVAGANTÈ</h1>
+        <img src="https://i.ibb.co/93vfCp2z" alt="Hero Image" class="hero-image">
+    </header>
+
+    <section>
+        <h2>Welcome to EXTRAVAGANTÈ</h2>
+        <p>Timeless, old-money style clothing — crafted for elegance and affordability.</p>
     </section>
-</main>
+</div>
 
 <footer>
     <p>© 2025 EXTRAVAGANTÈ</p>
 </footer>
-<script src="script.js"></script>
+
 </body>
 </html>
 
