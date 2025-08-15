@@ -1,215 +1,187 @@
-/* ===== Reset & Global ===== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #f9f9f9;
-    color: #333;
-    display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0a1f44; /* deep navy */
+  color: #fdf5e6; /* light cream */
+  display: flex;
 }
 
-/* ===== Sidebar Navigation ===== */
 .sidebar {
-    width: 220px;
-    background: #111;
-    color: white;
-    padding: 20px;
-    min-height: 100vh;
+  width: 220px;
+  background: #0a1f44;
+  color: #fdf5e6;
+  padding: 20px;
+  min-height: 100vh;
 }
 
 .sidebar h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-.sidebar a, .dropbtn {
-    display: block;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-    margin-bottom: 5px;
-    background: none;
-    border: none;
-    text-align: left;
-    width: 100%;
-    cursor: pointer;
+.sidebar a,
+.dropbtn {
+  display: block;
+  padding: 10px;
+  color: #fdf5e6;
+  text-decoration: none;
+  margin-bottom: 5px;
+  background: none;
+  border: none;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
 }
 
-.sidebar a:hover, .dropdown-content a:hover {
-    background: #444;
+.sidebar a.active {
+  background: #142c5b; /* lighter navy hover effect */
+}
+
+.sidebar a:hover,
+.dropdown-content a:hover {
+  background: #142c5b;
 }
 
 .dropdown {
-    position: relative;
+  position: relative;
 }
 
 .dropdown-content {
-    display: none;
-    background: #222;
-    padding-left: 15px;
+  display: none;
+  background: #0a1f44;
+  padding-left: 15px;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
-/* ===== Main Content ===== */
 .main-content {
-    flex: 1;
-    padding: 20px;
+  flex: 1;
+  padding: 20px;
 }
 
 .hero {
-    position: relative;
-    text-align: center;
-    margin-bottom: 20px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .brand-title {
-    position: absolute;
-    top: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fdf5e6;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .hero-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+  width: 100%;
+  border-radius: 8px;
 }
 
-/* ===== Products ===== */
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 
 .product-card {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    text-align: center;
+  background: #142c5b;
+  border: 1px solid #d4af37;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
 }
 
 .product-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+  max-width: 100%;
+  border-radius: 5px;
 }
 
 .price {
-    color: #b48c3b;
-    font-weight: bold;
-    margin: 8px 0;
+  color: #d4af37;
+  font-weight: 700;
+  margin: 8px 0;
 }
 
 button {
-    background: #111;
-    color: white;
-    padding: 8px 12px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
+  background: #d4af37;
+  color: #0a1f44;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
 button:hover {
-    background: #444;
+  background: #b9972f;
 }
 
-/* ===== Cart ===== */
 .cart-item {
-    background: white;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
+  background: #142c5b;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .checkout-btn {
-    display: inline-block;
-    margin-top: 15px;
-    background: #111;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+  background: #d4af37;
+  color: #0a1f44;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
 .checkout-btn:hover {
-    background: #444;
+  background: #b9972f;
 }
 
-/* ===== Checkout ===== */
 form label {
-    margin-top: 10px;
-    display: block;
-    font-weight: bold;
+  margin-top: 10px;
+  display: block;
+  font-weight: 700;
 }
 
-form input, form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
 
 form button {
-    width: 100%;
-    padding: 10px;
-    background: #111;
-    color: white;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  background: #d4af37;
+  color: #0a1f44;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
 }
 
 form button:hover {
-    background: #444;
+  background: #b9972f;
 }
 
-/* ===== Footer ===== */
 footer {
-    text-align: center;
-    padding: 15px;
-    background: #111;
-    color: white;
-    margin-top: 20px;
-    border-radius: 5px;
+  text-align: center;
+  padding: 15px;
+  background: #0a1f44;
+  color: #fdf5e6;
+  margin-top: 20px;
+  border-radius: 5px;
 }
-
-
-/* ===== Responsive Adjustments ===== */
-@media (max-width: 768px) {
-    .brand-title {
-        font-size: 1.8rem;
-        top: 10px;
-    }
-    .sidebar {
-        width: 180px;
-        padding: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .brand-title {
-        font-size: 1.4rem;
-        top: 8px;
-    }
-    .sidebar {
-        width: 160px;
-        padding: 10px;
-    }
-}
-
-
