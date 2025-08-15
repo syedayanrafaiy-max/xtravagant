@@ -1,48 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>EXTRAVAGANTÈ — Men's Polos</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Men's Polos - EXTRAVAGANTÈ</title>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
 </head>
 <body>
-  <button class="mobile-toggle">☰</button>
-  <aside class="sidebar" role="navigation">
-    <div class="brand">
-      <img src="assets/logo.svg" alt="logo">
-      <h1>EXTRAVAGANTÈ</h1>
-    </div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <div class="dropdown">
-        <button class="dropbtn">Products ▾</button>
-        <div class="dropdown-content"><a href="mens-polos.html">Men's Polos</a></div>
-      </div>
-      <a href="about.html">About</a>
-    </nav>
-  </aside>
 
-  <main class="content container">
-    <h2 class="fade-in">Classical Collared Polo</h2>
-    <div class="section fade-in">
-      <div class="price">Price: 2,750 PKR</div>
-      <div class="gallery">
-        <img src="https://i.postimg.cc/MGvfzWQy/Fit-Room-app-1754829391954-1.png" alt="Polo view 1" loading="lazy">
-        <picture>
-          <source srcset="https://i.postimg.cc/Hx0YgKBw/IMG-1593.avif" type="image/avif">
-          <img src="https://i.postimg.cc/Hx0YgKBw/IMG-1593.avif" alt="Polo view 2" loading="lazy">
-        </picture>
-        <picture>
-          <source srcset="https://i.postimg.cc/VvYYLRV3/IMG-1592-1.avif" type="image/avif">
-          <img src="https://i.postimg.cc/VvYYLRV3/IMG-1592-1.avif" alt="Polo view 3" loading="lazy">
-        </picture>
-      </div>
-      <p>The timeless “Classical Collared Polo” — handcrafted with care and designed for quiet elegance.</p>
+<div class="sidebar">
+    <h2>Menu</h2>
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+        <button class="dropbtn">Products</button>
+        <div class="dropdown-content">
+            <a href="mens-polos.html">Men's Polos</a>
+        </div>
     </div>
-  </main>
+    <a href="cart.html">Your Cart</a>
+    <a href="about.html">About</a>
+</div>
 
-  <div class="watermark">EXTRAVAGANTÈ</div>
-  <footer>© EXTRAVAGANTÈ — Timeless Style</footer>
-  <script src="script.js"></script>
+<div class="main-content">
+    <h1>Men's Polos</h1>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="https://i.postimg.cc/MGvfzWQy/Fit-Room-app-1754829391954-1.png" alt="Polo 1">
+            <h3>Classical Collared Polo</h3>
+            <p class="price">2750 PKR</p>
+            <button onclick="addToCart('Classical Collared Polo', 2750)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://i.postimg.cc/Hx0YgKBw/IMG-1593.avif" alt="Polo 2">
+            <h3>Classical Collared Polo</h3>
+            <p class="price">2750 PKR</p>
+            <button onclick="addToCart('Classical Collared Polo', 2750)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://i.postimg.cc/VvYYLRV3/IMG-1592-1.avif" alt="Polo 3">
+            <h3>Classical Collared Polo</h3>
+            <p class="price">2750 PKR</p>
+            <button onclick="addToCart('Classical Collared Polo', 2750)">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2025 EXTRAVAGANTÈ</p>
+</footer>
+
 </body>
 </html>
