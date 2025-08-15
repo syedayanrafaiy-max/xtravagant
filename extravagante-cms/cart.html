@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Cart - EXTRAVAGANTÈ</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Cart - EXTRAVAGANTÈ</title>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
 </head>
 <body>
-<nav class="navbar">
+
+<div class="sidebar">
+    <h2>Menu</h2>
     <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
+    <div class="dropdown">
+        <button class="dropbtn">Products</button>
+        <div class="dropdown-content">
+            <a href="mens-polos.html">Men's Polos</a>
+        </div>
+    </div>
     <a href="cart.html">Your Cart</a>
     <a href="about.html">About</a>
-</nav>
+</div>
 
-<main class="cart-page">
+<div class="main-content">
     <h1>Your Cart</h1>
     <div id="cart-items"></div>
     <p id="cart-total"></p>
     <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
-</main>
+</div>
 
 <footer>
     <p>© 2025 EXTRAVAGANTÈ</p>
 </footer>
-<script src="script.js"></script>
+
 </body>
 </html>
