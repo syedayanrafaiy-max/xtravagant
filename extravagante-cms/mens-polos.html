@@ -1,55 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Men's Polos - EXTRAVAGANTÈ</title>
-<link rel="stylesheet" href="styles.css">
-<script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Men's Polos - EXTRAVAGANTÈ</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .product-gallery {
+      text-align: center;
+    }
+    .main-image {
+      width: 300px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .thumbnails {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+    .thumbnails img {
+      width: 80px;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: transform 0.2s;
+    }
+    .thumbnails img:hover {
+      transform: scale(1.1);
+    }
+  </style>
 </head>
 <body>
 
 <div class="sidebar">
-    <h2>Menu</h2>
-    <a href="index.html">Home</a>
-    <div class="dropdown">
-        <button class="dropbtn">Products</button>
-        <div class="dropdown-content">
-            <a href="mens-polos.html">Men's Polos</a>
-        </div>
+  <h2>Menu</h2>
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Products</button>
+    <div class="dropdown-content">
+      <a href="mens-polos.html">Men's Polos</a>
     </div>
-    <a href="cart.html">Your Cart</a>
-    <a href="about.html">About</a>
+  </div>
+  <a href="cart.html">Your Cart</a>
+  <a href="about.html">About</a>
 </div>
 
 <div class="main-content">
-    <h1>Men's Polos</h1>
-    <div class="product-grid">
-        <div class="product-card">
-          <img src="https://i.ibb.co/Kzx38v1x/IMG-1703.jpg" alt="Polo 1">
-            <h3>Classical Collared Polo</h3>
-            <p class="price">2750 PKR</p>
-            <button onclick="addToCart('Classical Collared Polo', 2750)">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://i.ibb.co/hJnSNt8b/IMG-1702.jpg alt="Polo 2">
-            <h3>Classical Collared Polo</h3>
-            <p class="price">2750 PKR</p>
-            <button onclick="addToCart('Classical Collared Polo', 2750)">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://i.ibb.co/zTSRnpwL/IMG-1701.jpg" alt="Polo 3">
-            <h3>Classical Collared Polo</h3>
-            <p class="price">2750 PKR</p>
-            <button onclick="addToCart('Classical Collared Polo', 2750)">Add to Cart</button>
-        </div>
+  <h1>Classical Collared Polo</h1>
+  <div class="product-gallery">
+    <!-- Main Image -->
+    <img id="mainProductImage" src="https://i.postimg.cc/MGvfzWQy/Fit-Room-app-1754829391954-1.png" 
+         alt="Classical Collared Polo" class="main-image">
+
+    <!-- Thumbnails -->
+    <div class="thumbnails">
+      <img src="https://i.postimg.cc/MGvfzWQy/Fit-Room-app-1754829391954-1.png" 
+           alt="Polo view 1" onclick="changeImage(this)">
+      <img src="https://i.postimg.cc/Hx0YgKBw/IMG-1593.avif" 
+           alt="Polo view 2" onclick="changeImage(this)">
+      <img src="https://i.postimg.cc/VvYYLRV3/IMG-1592-1.avif" 
+           alt="Polo view 3" onclick="changeImage(this)">
     </div>
+
+    <h2>2,750 PKR</h2>
+    <button onclick="addToCart('Classical Collared Polo', 2750)">Add to Cart</button>
+  </div>
 </div>
 
 <footer>
-    <p>© 2025 EXTRAVAGANTÈ</p>
+  <p>© 2025 EXTRAVAGANTÈ</p>
 </footer>
+
+<script>
+  function changeImage(el) {
+    document.getElementById("mainProductImage").src = el.src;
+  }
+</script>
 
 </body>
 </html>
+
+
+  
 
