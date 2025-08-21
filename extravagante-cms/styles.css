@@ -185,3 +185,40 @@ footer {
   margin-top: 20px;
   border-radius: 5px;
 }
+
+/* Brand Title (EXTRAVAGANTÈ Header) */
+.brand-title {
+  font-family: 'Georgia', serif;
+  font-size: 3rem;
+  text-align: center;
+  color: #fdf5e6;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+/* Adjustments for laptops */
+@media (max-width: 1200px) {
+  .brand-title {
+    font-size: 2.5rem;
+    top: 15px;
+  }
+}
+
+/* Adjustments for tablets */
+@media (max-width: 768px) {
+  .brand-title {
+    font-size: 2rem;
+    top: 10px;
+  }
+}
+
+/* Adjustments for mobile */
+@media (max-width: 480px) {
+  .brand-title {
+    font-size: 1.6rem;
+    top: 8px;
+  }
+}
